@@ -16,14 +16,15 @@ class SplashActivity : AppCompatActivity() {
 
 
     private fun setupEvents() {
+
+    }
+
+    private fun setValues() {
         Handler().postDelayed(2500){
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
             finish()
         }
-    }
-
-    private fun setValues() {
 
     }
 }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.willy.ratingbar.ScaleRatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srb_isIndicator="true"
+            app:srb_stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/textViewTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="kotlinAndroid 수업"
+            android:textColor="@color/warm_gray_800"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkboxTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:checked="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="20dp"
+        android:scaleX="2"
+        android:scaleY="2" />
+
+</LinearLayout>

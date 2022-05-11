@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".DetailTodoActivity">
+
+    <com.willy.ratingbar.ScaleRatingBar
+        android:id="@+id/ratingbarDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        app:srb_isIndicator="false"
+        app:srb_starHeight="50dp"
+        app:srb_starWidth="50dp"
+        app:srb_stepSize="0.5" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="수행할 업무"
+        android:textColor="@color/warm_gray_800"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="kotlin복습"
+        android:textColor="@color/warm_gray_800"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="업무 잔행 장소"
+        android:textColor="@color/warm_gray_800"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="넵플러스"
+        android:textColor="@color/warm_gray_800"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/red"
+        android:text="삭제하기"
+        android:textSize="16sp" />
+
+</LinearLayout>
